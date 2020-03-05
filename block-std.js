@@ -1,5 +1,5 @@
 var BlockStd = Object.getPrototypeOf(app).BlockStd = new Component("block-std");
-BlockStd.debug = true;
+// BlockStd.debug = true;
 BlockStd.createdAt      = "2.0.0";
 BlockStd.lastUpdate     = "2.0.0";
 BlockStd.version        = "1";
