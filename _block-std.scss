@@ -5,6 +5,6 @@
 	%lift
 	!optional;
 	&:not([class*="bg-"]){background-color: body(block-background);}
-	&>*:last-child:not([class*="m-bottom"]){margin-bottom: 0;}
 	.d-grid>&{margin-bottom: 0;}
+	@include lastChildNoMargin();
 }
