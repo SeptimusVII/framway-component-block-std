@@ -1,8 +1,7 @@
 .block-std{ max-width: 100%; margin-bottom: $spacing; padding: $spacing;
 	@include media-max(sm){margin-bottom: $spacing*0.5; padding: $spacing*0.5;}
 	@extend
-	%paper,
-	%lift
+	%paper
 	!optional;
 	&:not([class*="bg-"]){background-color: body(block-background);}
 	.d-grid>&{margin-bottom: 0;}
