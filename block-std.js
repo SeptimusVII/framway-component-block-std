@@ -1,14 +1,16 @@
-module.exports = function(app){
-	var BlockStd = Object.getPrototypeOf(app).BlockStd = new app.Component("block-std");
-	// BlockStd.debug = true;
-	BlockStd.createdAt      = "2.0.0";
-	BlockStd.lastUpdate     = "2.5.1";
-	BlockStd.version        = "1.1.0";
-	// BlockStd.factoryExclude = true;
-	// BlockStd.loadingMsg     = "This message will display in the console when component will be loaded.";
-
-	// BlockStd.prototype.onCreate = function(){
-	  // do thing after element's creation
-	// }
-	return BlockStd;
+module.exports = function(){
+    let BlockStd = Object.getPrototypeOf(fw).BlockStd = class BlockStd extends fw.Component{
+        static {
+            this.debug = true;
+            this.createdAt  = "3.0.0";
+            this.lastUpdate = "3.0.0";
+            this.version = "2.0.0";
+            this.tpl = utils.getNodeFromString(require('bundle-tpl:./block-std.html')).outerHTML;
+            // this.describe();
+        }
+        // onCreate(){
+            // do thing after element's creation
+        // }
+    }
+    return BlockStd;
 }
